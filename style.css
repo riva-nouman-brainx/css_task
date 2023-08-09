@@ -3,10 +3,16 @@ h1{
     font-size: 40px;
     font-weight: 500;
     color: #3b3663;
-    margin-top: 120px;
-    margin-bottom: 90px;
- 
 }
+.flex-container {
+    text-align: center;
+    display: flex;
+    /* width: 1030px;
+    height: 220px; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+  }
 
 * {
     box-sizing: border-box;
@@ -18,6 +24,18 @@ p{
     color: rgba(22, 28, 45, 0.7);
     opacity: .8;
 }
+/* .mainDiv{
+
+    padding: 40px 40px;
+    justify-content: center;
+    display: flex;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+    grid-template-columns: 950px;
+
+} */
 .name{
     color: #3b3663;
     font-size: 30px;
@@ -67,7 +85,6 @@ button, .btn, select {
     display: inline-block;
     padding: 40px 25px;
     text-align: center;
-    transition: .5s linear;
     position: relative;
 }
 
@@ -77,6 +94,9 @@ ul {
     text-align: left;
     margin-top: 50px;
 }
+.padAdd{
+    padding: 40px 25px;
+}
 li {
     margin-bottom: 20px;
     font-size: 17px;
@@ -85,14 +105,21 @@ li {
 }
 .wrapper {
     width: 100%;
+    display: flex;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 .brilliant {
     border-color: #0abf53;
+    padding: 0;
+}
+.brilliant hr{
+    width: 300px;
 }
 
 .fa-color{
@@ -125,16 +152,41 @@ a {
     border-style: solid;
     left: 0;
     top: 0;
-    position: absolute;
+    position: relative;
     border-width: 64px 64px 0 0;
+    z-index: 1;
 }
 
 .star-align {
     color: white;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 5%;
+    top: 3.75%;
+    z-index: 2;
     transform: translate(-50%, -50%);
-    text-shadow: 0 0 2px var(--primary-color);
-    font-size: 1.2rem;
+    /* text-shadow: 0 0 2px var(--primary-color); */
+    font-size: 1.5rem;
 }
+.w3l-pricingplans {
+    padding: 40px 40px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+}
+.footer{
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.hover-item {
+    transition: 0.25s linear;
+}
+
+.hover-item:hover {
+    transform: translate(0, -15px);
+    
+}
+
